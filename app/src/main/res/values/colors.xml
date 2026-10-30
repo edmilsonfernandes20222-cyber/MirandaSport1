@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores extraídas do emblema MirandaSport -->
+    <color name="brand_gold">#D4AF37</color>       <!-- Dourado principal do escudo -->
+    <color name="brand_dark_gold">#AA8C2C</color>   <!-- Dourado escuro / sombra -->
+    <color name="brand_black">#121212</color>       <!-- Fundo escuro elegante -->
+    <color name="brand_surface">#1E1E1E</color>     <!-- Superfície de cartões -->
+    <color name="white">#FFFFFF</color>
+</resources>

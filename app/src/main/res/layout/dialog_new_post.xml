@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:padding="16dp">
+
+    <!-- Cabeçalho do Diálogo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Criar Publicação"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#D4AF37" />
+
+        <ImageView
+            android:id="@+id/btn_close_dialog"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Perfil do Utilizador no Post -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#D4AF37"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MirandaSport Oficial"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Público 🌍"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Caixa de Texto com Opção de Quadro / Fundo Decorativo -->
+    <FrameLayout
+        android:id="@+id/frame_post_background"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#2C2C2C"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/input_post_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="No que estás a pensar para o MirandaSport?"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="@null"
+            android:gravity="top|start"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <!-- Botão Seletor de Quadros / Estilos de Letra (Ícone Aa) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_toggle_backgrounds"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="🎨 Aa (Quadros)"
+            android:textSize="12sp"
+            android:textColor="#D4AF37"
+            android:backgroundTint="#121212" />
+
+    </LinearLayout>
+
+    <!-- Barra de Opções para Adicionar à Publicação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#252525"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adicionar à tua publicação"
+            android:textColor="#CCCCCC"
+            android:textSize="13sp" />
+
+        <!-- Ícones de ação rápida (Foto, Vídeo, Emojis) -->
+        <ImageView
+            android:id="@+id/icon_add_photo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_marginRight="12dp" />
+
+        <ImageView
+            android:id="@+id/icon_add_video"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_slideshow" />
+    </LinearLayout>
+
+    <!-- Botão Publicar Final -->
+    <Button
+        android:id="@+id/btn_submit_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:backgroundTint="#D4AF37"
+        android:textColor="#121212"
+        android:textStyle="bold" />
+
+</LinearLayout>

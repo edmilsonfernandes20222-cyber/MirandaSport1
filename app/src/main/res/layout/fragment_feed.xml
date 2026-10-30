@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <!-- Cabeçalho do Feed -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MirandaSport Feed"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#D4AF37"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Barra de Pesquisa Inteligente com Bot Web -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1E1E1E"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Pesquisar notícias, jogos na web..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:background="@null"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btn_smart_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="🤖 Bot"
+            android:textSize="12sp"
+            android:backgroundTint="#D4AF37"
+            android:textColor="#121212"/>
+    </LinearLayout>
+
+    <!-- Botão para Criar Novo Post ou Reel -->
+    <Button
+        android:id="@+id/btn_new_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Publicar Novo Post ou Reel"
+        android:backgroundTint="#D4AF37"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Mural de Publicações -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Exemplo de Post no Feed -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#1E1E1E"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 MirandaSport em Destaque"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bem-vindo ao novo feed interativo do MirandaSport! Publica as tuas ideias ou usa o bot para pesquisar na web."
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Botões de Reação e Comentário -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <Button
+                        android:id="@+id/btn_like"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="❤️ Reagir"
+                        android:textSize="12sp"
+                        android:textColor="#D4AF37"
+                        android:layout_marginRight="8dp"/>
+
+                    <Button
+                        android:id="@+id/btn_comment"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="💬 Comentar"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
