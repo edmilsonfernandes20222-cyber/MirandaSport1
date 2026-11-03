@@ -1,0 +1,23 @@
+# MirandaSport1
+
+Plataforma de rede social interativa focada no desporto, desenvolvida para unir adeptos, partilhar atualizações desportivas e acompanhar novidades em tempo real.
+
+## 🚀 Funcionalidades
+- **Feed Interativo:** Partilha de publicações, notícias e conteúdos desportivos.
+- **Acompanhamento:** Acompanhamento de resultados, equipas e eventos.
+- **Comunidade:** Interação e debate sobre estratégias e partidas.
+
+## 🛠️ Tecnologias
+- **Plataforma:** Android Native
+- **Ambiente de Desenvolvimento:** Android Studio
+- **Linguagens/Ferramentas:** Java / Kotlin, Gradle
+
+## 📂 Estrutura do Projeto
+O projeto está organizado com a estrutura padrão Android:
+- `app/` — Código-fonte da aplicação e layouts (XML).
+- `gradle/` e `build.gradle.kts` — Configurações de build e dependências.
+
+## ⚙️ Como Compilar e Executar
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/edmilsonfernandes2022-cyber/MirandaSport1.git](https://github.com/edmilsonfernandes2022-cyber/MirandaSport1.git)
